@@ -1,6 +1,6 @@
 ##  GWT Material
 
-* Chosen because it's ready to use today in production now
-* No Material Design Light, we want GWT Widgets and few CSS3/HTML5 (distraction free coding)                                            
-* We are interested observer of gwt-polymer project
+* Chosen because it's ready to use in production now
+* No Google's Material Design Light, we want GWT Widgets and few CSS3/HTML5 (distraction free coding)                                            
+* We are interested observers of gwt-polymer project
 
