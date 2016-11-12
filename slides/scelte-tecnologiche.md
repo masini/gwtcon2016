@@ -1,4 +1,4 @@
-##  Scelte Tecnologiche
+##  Tech choices
 
 * GWT 2.8 (of course)
 * GWT Material 1.6 (soon 2.0)
