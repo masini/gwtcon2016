@@ -1,6 +1,6 @@
 ##  GWT Material
 
-* Perché GWT Material e non altri framework
-* No Material Design Light perché vogliamo widget nativi e poca interazione con CSS/HTML5 (distraction free coding)                                            
-* Esclusione pro-tempore di gwt-polymer
-* Issues con GWT Material
+* Choosen because it's ready to use today in production now
+* No Material Design Light, we want GWT Widgets and few CSS3/HTML5 (distraction free coding)                                            
+* We are interested observer of gwt-polymer project
+

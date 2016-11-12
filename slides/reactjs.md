@@ -17,3 +17,4 @@ class App extends React.Component {
    }
 }
 ```
+PS: but Flux is very interesting
