@@ -1,0 +1,26 @@
+[
+    "1-main.html",
+    {
+        "filename": "speakers.html",
+        "attr": {
+            "data-transition": "zoom"
+        }
+    },
+    "motivazioni.md",
+    "angularjs.md",
+    "angularjs-2.md",
+    "reactjs.md",
+    "material-design.md",
+    "scelte-tecnologiche.md",
+    "gwt-material.md",
+    "errai-framework.md",
+    "generatori-apt.md",
+    "gwt-2-8.md",
+    "A_0.html",
+    "A_1.html",
+    "A_2_archetype.html",
+    "A_3_errai.html",
+    "A_4_annotation.html",
+    "A_5_ui.html",
+    "A_final.html"
+]

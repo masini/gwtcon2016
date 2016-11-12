@@ -1,0 +1,55 @@
+   <h2>Archetype</h2>
+<!-- FIRST SECTION -->
+<section data-background="#1976D2" > <!--#4CAF50-->
+<div style="color:white">
+<!--   <div style="border:1px solid white; background-color:#689f38; padding:30px; font-family: monospace"> -->
+    <div style="border:1px solid white; background-color:black; padding:30px; font-family: monospace">
+        <p align="left">
+            <small>
+                <br>mvn
+                <br>-DinteractiveMode=false \
+                <br>-DgroupId=com.gwtcon.productivegwt \
+                <br>-DartifactId=gwtcon2016-demo \
+                <br>-Dversion=1.0.0-SNAPSHOT \
+                <br>-DarchetypeGroupId=com.gwtcon.archetype \
+                <br>-DarchetypeArtifactId=gwtcon-archetype \
+                <br>-DarchetypeVersion=0.0.1-SNAPSHOT \
+                <br>org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate
+            </small>
+        </p>
+   </div>
+</div>
+</section>
+
+<!-- SECOND SECTION -->
+<section data-background="#1976D2" > <!--#4CAF50-->
+   <h2> </h2>
+   <br>
+	<img class="shortened" src="../resources/app_sample_gwtcon_demo.png"/>
+</section>
+
+
+<!-- Third SECTION -->
+<section data-background="#1976D2" > <!--#4CAF50-->
+<div style="color:white">
+   <h2></h2>
+   <br><br>
+
+    <div style="border:1px solid white; background-color:black; padding:30px; font-family: monospace">
+      <p align="left">
+      <small>@MenuEntry(text = "Home, default page", order = 0)</small>
+      <br><small>@RestrictedAccess(roles = {"gwtcon-admin", "gwtcon-user"})</small>
+      <br><small>@Page(role = DefaultPage.class, path = "/home")</small>
+      <br><br>
+      <small>public class Home extends HTML {</small>
+      <br> &nbsp;&nbsp;&nbsp;<small>@Inject</small>
+      <small>BootstrapData bootstapData;</small>
+      <br>&nbsp;&nbsp;&nbsp;<small>@PageShowing    private void setup() {</small>
+      <br>&nbsp;&nbsp;&nbsp;<small>}</small>
+      <br>
+      <small>}</small>
+      </p>
+   </div>
+</div>
+</section>
+
