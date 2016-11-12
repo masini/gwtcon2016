@@ -1,5 +1,5 @@
-##  Material Design
+###  Material Design
 
-<img width="50%" src="resources/turni.png"/>
+<img src="resources/turni.png"/>
 
-<img width="50%" src="resources/ticcru.png"/>
+<!--img width="50%" src="resources/ticcru.png"/-->
