@@ -4,5 +4,5 @@
 
 * 2.8 compile time is higher than in 2.7
 * More memory usage (+80%)
-* Source Maps variables name still not very usable
+* Variables name now are even more cryptically and still no support from Source Maps 
 

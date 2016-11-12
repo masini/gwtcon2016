@@ -2,5 +2,5 @@
 
 We need
  
-* An archetype to lower the startup time of new enterprise application
-* A programming model that can lower the barrier of using GWT as the GUI framework.
+* A programming model that can lower the barrier of using GWT as the GUI framework...
+* ..helped by an archetype for fast startup of new enterprise application project

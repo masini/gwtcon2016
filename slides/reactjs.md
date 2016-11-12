@@ -2,7 +2,7 @@
 
 It took 20 years to escape from JSP and ASP.
 
-Now Facebook has invented JSX:
+Now Facebook has invented JSX, so that we can mix JavaScript and HTML:
 ```JavaScript
 class App extends React.Component {
    render() {

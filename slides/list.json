@@ -6,17 +6,76 @@
             "data-transition": "zoom"
         }
     },
-    "motivazioni.md",
-    "target.md",
-    "angularjs.md",
-    "angularjs-2.md",
-    "reactjs.md",
-    "material-design.md",
-    "scelte-tecnologiche.md",
-    "gwt-2-8.md",
-    "gwt-material.md",
-    "errai-framework.md",
-    "generatori-apt.md",
+    {
+        "filename": "motivazioni.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/giove.jpg"
+        }
+    },
+    {
+        "filename": "target.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/mercurio.jpg"
+        }
+    },
+    {
+        "filename": "angularjs.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/kepler-186f.jpg"
+        }
+    },
+    {
+        "filename": "angularjs-2.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/plutone.png"
+        }
+    },
+    {
+        "filename": "reactjs.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/nettuno.jpg"
+        }
+    },
+    {
+        "filename": "material-design.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/saturno.jpg"
+        }
+    },
+    {
+        "filename": "scelte-tecnologiche.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/pianeti.jpg"
+        }
+    },
+    {
+        "filename": "gwt-2-8.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/venere.jpg"
+        }
+    },
+    {
+        "filename": "gwt-material.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/marte1.jpg"
+        }
+    },
+    {
+        "filename": "errai-framework.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background": "resources/errai.jpg"
+        }
+    },
     "A_0.html",
     "A_1.html",
     "A_2_archetype.html",
