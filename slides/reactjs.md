@@ -17,4 +17,5 @@ class App extends React.Component {
    }
 }
 ```
-PS: but Flux is very interesting
+But Flux is very interesting !!!<!-- .element: class="fragment" data-fragment-index="1" -->
+

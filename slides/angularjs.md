@@ -1,6 +1,7 @@
 ##  Why not the sexy XXX framework ?
 
 Here a snippet of code using ProductiveGWT
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```Java
 @MenuEntry(text = "Catalogue") //Integration with GUI and Security
@@ -16,4 +17,5 @@ public class CataloguePage extends AbstractRicercaView<Catalogue> {
     Caller<CatalogueService> catalogueServiceCaller; 
     
     // My Business code
-```
+``` 
+<!-- .element: class="fragment" data-fragment-index="1" -->
