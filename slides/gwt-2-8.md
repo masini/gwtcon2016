@@ -11,7 +11,7 @@ Note:
 Having worked now a lot with GWT 2.8 now we can say that having the same Java version client/server is again a plus, we
 had to survive a lot with Java 8 server-side and Java 6/7 on the client.
 
-We don't use lambda a lot because thanks to UI Binder events are managed by instance methods.
+We don't use lambda a lot because events are managed by instance methods annotated with UIHandler
 
 We also have an opinion of what must be improved:
 

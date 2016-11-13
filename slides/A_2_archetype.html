@@ -1,24 +1,21 @@
-   <h2>Archetype</h2>
+<h2 xmlns:align="http://www.w3.org/1999/xhtml" xmlns:align="http://www.w3.org/1999/xhtml">Archetype</h2>
 <!-- FIRST SECTION -->
 <section data-background="#1976D2" > <!--#4CAF50-->
-<div style="color:white">
 <!--   <div style="border:1px solid white; background-color:#689f38; padding:30px; font-family: monospace"> -->
-    <div style="border:1px solid white; background-color:black; padding:30px; font-family: monospace">
-        <p align="left">
-            <small>
-                <br>mvn
-                <br>-DinteractiveMode=false \
-                <br>-DgroupId=com.gwtcon.productivegwt \
-                <br>-DartifactId=gwtcon2016-demo \
-                <br>-Dversion=1.0.0-SNAPSHOT \
-                <br>-DarchetypeGroupId=com.gwtcon.archetype \
-                <br>-DarchetypeArtifactId=gwtcon-archetype \
-                <br>-DarchetypeVersion=0.0.1-SNAPSHOT \
-                <br>org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate
-            </small>
-        </p>
+
+    <div style="border:1px solid white; background-color:rgba(0, 0, 0, 0.3); padding:15px; font-family: monospace">
+            <div align="left"><small>
+                mvn<br>
+                -DinteractiveMode=false \ <br>
+                -DgroupId=com.gwtcon.productivegwt \ <br>
+                -DartifactId=gwtcon2016-demo \ <br>
+                -Dversion=1.0.0-SNAPSHOT \ <br>
+                -DarchetypeGroupId=com.gwtcon.archetype \ <br>
+                -DarchetypeArtifactId=gwtcon-archetype \ <br>
+                -DarchetypeVersion=0.0.1-SNAPSHOT \ <br>
+                org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate
+            </small></div>
    </div>
-</div>
 </section>
 
 <!-- SECOND SECTION -->
@@ -35,20 +32,18 @@
    <h2></h2>
    <br><br>
 
-    <div style="border:1px solid white; background-color:black; padding:30px; font-family: monospace">
-      <p align="left">
-      <small>@MenuEntry(text = "Home, default page", order = 0)</small>
-      <br><small>@RestrictedAccess(roles = {"gwtcon-admin", "gwtcon-user"})</small>
-      <br><small>@Page(role = DefaultPage.class, path = "/home")</small>
-      <br><br>
-      <small>public class Home extends HTML {</small>
-      <br> &nbsp;&nbsp;&nbsp;<small>@Inject</small>
-      <small>BootstrapData bootstapData;</small>
-      <br>&nbsp;&nbsp;&nbsp;<small>@PageShowing    private void setup() {</small>
-      <br>&nbsp;&nbsp;&nbsp;<small>}</small>
-      <br>
-      <small>}</small>
-      </p>
+    <div style="border:1px solid white; background-color:rgba(0, 0, 0, 0.3); padding:15px; font-family: monospace">
+        <div align="left"><small>
+            @MenuEntry(text = "Home, default page", order = 0) <br>
+            @RestrictedAccess(roles = {"gwtcon-admin", "gwtcon-user"}) <br>
+            @Page(role = DefaultPage.class, path = "/home") <br>
+            <br>
+            public class Home extends HTML { <br>
+            &nbsp;&nbsp;@Inject BootstrapData bootstapData; <br>
+            &nbsp;&nbsp;&nbsp;@PageShowing private void setup() { <br>
+            &nbsp;&nbsp;&nbsp;} <br>
+            }
+        </small>
    </div>
 </div>
 </section>

@@ -3,125 +3,190 @@
    <h2>ERRAI Framework</h2>
 
 <section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="color:white">
-        <div style="border:1px solid white; opacity: 0.9; background-color:white; padding:50px; color:black">
-            <p align="left">Enterprise Applications need to:</p>
-            <p align="left"> - know user info and application data</p>
-            <p align="left"> - be access restricted</p>
-            <p align="left"> - be customized (Splash Page, Wait Panel, ...)</p>
-            <p align="left"> - have common features (search, async callback, ...)</p>
+
+    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p align="left">
+            Enterprise Applications need to:<br>
+            <ul>
+                <li>hava pages integrated in the browser history</li>
+                <li>know user info and application data</li>
+                <li>be access restricted</li>
+                <li>be customized (Splash Page, Wait Panel, ...)</li>
+                <li>have common features (search, async callback, ...)</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+
+
+
+<section data-background="resources/wired.jpg" > <!--#1976D2-->
+    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p style="font-size:35px">Errai Navigation to ...</p>
+
+        <div align="left">
+            <ul>
+                <li>declare page with Page Annotation over the classes
+                    <div
+                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Page(role = DefaultPage.class, path = "/home")<br>
+                                public class Home extends HTML {...}<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+                <li>navigate between pages
+                    <div
+                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Inject TransitionTo&lt;Samples&gt; transition;<br>
+                                ...<br>
+                                transition.go();<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section data-background="resources/wired.jpg" > <!--#1976D2-->
-<div style="color:white">
-    <div style="border:1px solid white; opacity: 0.9; background-color:white; padding:50px; color:black">
-        <p align="left">IOC to obtain info and application data</p>
-        <div style="border:1px solid white; background-color:black; padding:15px; font-family: monospace; color:white">
-        <p align="left">
-                    <small>
-                        @Inject<br>
-                        BootstrapData bootstrapData;<br>
-                        ...<br>
-                        Window.alert(bootstrapData.getUserInfo().getUsername());<br>
-                    </small>
-                </p>
-            </div>
+    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p style="font-size:35px">IOC to ...</p>
+
+        <div align="left">
+            <ul>
+                <li>obtain user informations and application data through DI
+                    <div
+                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Inject BootstrapData bootstrapData;<br>
+                                ...<br>
+                                Window.alert(bootstrapData.getUserInfo().getUsername());<br>
+                                ...<br>
+                                Window.alert(bootstrapData.getApplicationName());<br>
+                                Window.alert(bootstrapData.getServerName());<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
 </section>
 
 <!-- Third SECTION -->
 <section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="color:white">
-        <div style="border:1px solid white; opacity: 0.9; background-color:white; padding:50px; color:black">
-            <p align="left">Errai Security to restrict access to pages</p>
-            <p align="left">Through Rescricted Access Annotation over:</p>
-            <p align="left"> -  REST resources</p>
-            <p align="left"> -  UI elements</p>
-            <div
-                style="border:1px solid white; background-color:black; padding:15px; font-family: monospace; color:white">
-                <p align="left">
-                    <small>
-                        @GET<br>
-                        @Path("/{id}")<br>
-                        @Produces(MediaType.APPLICATION_JSON)<br>
-                        @RestrictedAccess(roles = "gwtcon-admin")<br>
-                        public Customer find(@PathParam("id") long id);<br>
-                    </small>
-                </p>
-            </div>
+    <div
+        style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p style="font-size:35px">Errai Security to ... </p>
+        <div align="left">
+            <ul>
+                <li>restrict access through Rescricted Access Annotation over:
+                    <ul>
+                        <li>Pages and UI elements
+                            <div
+                                style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                                <div align="left">
+                                    <small>
+                                        @Page(role = DefaultPage.class, path = "/home")<br>
+                                        @RestrictedAccess(roles = {"gwtcon-admin", "gwtcon-user"})<br>
+                                        public class Home extends HTML {<br>
+                                        &nbsp;&nbsp;&nbsp;@RestrictedAccess(roles = {"gwtcon-admin"})<br>
+                                        &nbsp;&nbsp;&nbsp;@Inject @DataField private Button sendLogo;<br>
+                                        &nbsp;&nbsp;&nbsp;...<br>
+                                        }<br>
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>REST resources
+                            <div
+                                style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                                <div align="left">
+                                    <small>
+                                        @GET @Path("/{id}")<br>
+                                        @Produces(MediaType.APPLICATION_JSON)<br>
+                                        @RestrictedAccess(roles = "gwtcon-admin")<br>
+                                        public Customer find(@PathParam("id") long id);<br>
+                                    </small>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="color:white">
-        <div style="border:1px solid white; opacity: 0.9; background-color:white; padding:50px; color:black">
-            <p align="left">IOC and Alternative to customize the SplashPage</p>
-            <p align="left">First way: through an instance of AppView</p>
-            <div style="border:1px solid white; background-color:black; padding:15px; font-family: monospace; color:white">
-                <p align="left">
-                    <small>
-                        @Inject<br>
-                        AppView appView;<br>
-                        ...<br>
-                        appView.getSplashScreen().setText("Splash … ");<br>
-                    </small>
-                </p>
-            </div>
-            <p align="left">Second way: creating an alternative for SplashScreen and activating it into
-                ErraiApp.properties</p>
-            <div
-                style="border:1px solid white; background-color:black; padding:15px; font-family: monospace; color:white">
-                <p align="left">
-                    <small>
-                        @Alternative<br>
-                        public class CustomSplashScreen implements SplashScreen {... }<br>
-                        <br>
-                        errai.ioc.enabled.alternatives= \ <br>
-                        com.gwtcon.productivegwt.client.ui.CustomSplashScreen<br>
-                    </small>
-                </p>
-            </div>
+    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p style="font-size:35px">IOC and Alternative to ...</p>
+
+        <div align="left">
+            <ul>
+                <li>customize the SplashPage through an instance of AppView
+                    <div
+                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Inject AppView appView;<br>
+                                ...<br>
+                                appView.getSplashScreen().setText("Splash … ");<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+                <li>customize the SplashPage creating an alternative for SplashScreen and activating it into ErraiApp.properties
+                    <div
+                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Alternative<br>
+                                public class CustomSplashScreen implements SplashScreen {...}<br>
+                                <br>
+                                errai.ioc.enabled.alternatives=<br>
+                                com.gwtcon.productivegwt.client.ui.CustomSplashScreen<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="color:white">
-        <div style="border:1px solid white; opacity: 0.9; background-color:white; padding:50px; color:black">
-            <p>Intercerptors to handle Async Callback</p>
-            <p align="left">Through interceptors over REST resources</p>
-            <div
-                style="border:1px solid white; background-color:black; padding:15px; font-family: monospace; color:white">
-                <p align="left">
-                    <small>
-                        @GET<br>
-                        @Path("/{id}")<br>
-                        @Produces(MediaType.APPLICATION_JSON)<br>
-                        @InterceptedCall(RequestInterceptor.class)<br>
-                        public Customer find(@PathParam("id") long id);<br>
-                    </small>
-                </p>
+    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+        <p style="font-size:35px">Intercerptors to ...</p>
+
+        <div align="left">
+            <ul>
+                <li>handle Async Callback through interceptors over REST resources
+                <div
+                    style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                    <div align="left">
+                        <small>
+                            @GET<br>
+                            @Path("/{id}")<br>
+                            @Produces(MediaType.APPLICATION_JSON)<br>
+                            @InterceptedCall(RequestInterceptor.class)<br>
+                            public Customer find(@PathParam("id") long id);<br>
+                        </small>
+                    </div>
+                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-</section>
-
-
-<!-- Fourth SECTION -->
-
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-<div style="color:white">
-<div style="border:1px solid white; opacity=0.9; background-color:lightgray; padding:50px; color:black">
-      <p align="left"> Errai Navigation</p>
-      <p align="left"></p>
-      <p align="left"></p>
-   </div>
-</div>
 </section>
 
 
