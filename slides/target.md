@@ -9,8 +9,11 @@ This was done gluing together some carefully chosen available frameworks. <!-- .
 
 Note:
 
-Come detto gli obiettivi di questo "metaframework" sono:
+As I said, we identified these objectives for our metaframework:
 
-Un layout coerente e completo di tutti gli elementi necessari /
-Integrazione automatica con i sistemi di backend e in particolare con i dati di provisioning dell'utente e di bootstrap dell'applicazione /
-Un modo semplice e alternativo a gwt-rpc per comunicare con servizi REST applicativi o messi a disposizione da terzi
+A coherent layout, complete of all the necessary elements, I will say more about this later //
+Automatic integration with backend subsystem, in particular user provisioning and bootstrap application data //
+A simple alternative to gwt-rpc to call REST end-point
+Plain old GWT Widgets that let the developer write the user interface without worrying too much about what HTML will be generated, but assuring us that the layout and style will be preserved
+
+To do this we selected some frameworks available in the open source GWT space and we integrated them for the end-user developer

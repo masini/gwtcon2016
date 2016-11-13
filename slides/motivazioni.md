@@ -7,10 +7,10 @@ We need
 
 Note:
 
-La nostra scelta di GWT è iniziata ormai 10 anni fa e fin dall'inizio abbiamo pensato che per un uso 
-veramente "enterprise" fossero necessari alcuni strumenti che all'epoca non facevano parte del toolkit standard
-Tra questi furono individuati un layoyt standard per tutte le applicazioni, un modello di sviluppo semplificato e 
-un archetipo per abbassare al massimo il tempo di startup di un nuovo progetto.
+We started using GWT 10 years ago and from the beginning we thought that for a real enterprise
+use would be necessary tools not avaiable in the standard toolkit at that time.
+Among this we identified a standard layout for all our internal applications, a simplified development
+model and an archetype to start project coherently and in few minutes
 
-Dal 2006 sono passati 10 anni e ancora questi sono ingredienti che non fanno parte nel del toolkit standard
-ne a 360 gradi di alcun framework disponibile 
+Since then 10 years have passed and yet these ingredients are not part of the standard toolkit
+nor any framework available on the open source landscape
