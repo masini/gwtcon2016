@@ -20,10 +20,11 @@ class App extends React.Component {
 But Flux is very interesting !!!<!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
-Well, ReactJS not is the coolest framework but a lot has been written about JSP and ASP because they mix HTML tags with
-Java/JavaScript/C# code and now what ??
+Well, ReactJS now is the coolest framework but......
 
-A framework that let us mix HTML and JavaScript.
+A lot has been said and written against JSP and ASP because they mix HTML tags with Java/JavaScript/C# code and now what ??
+
+A new framework that let us mix HTML and JavaScript.
 
 Seriously ?
 

@@ -8,7 +8,7 @@ Note:
 
 Here is an example of our layout, done with Material Design in mind.
 
-You can notice the menu on the right, which can be opened/closed using the burger icon in the top-left corner of the header bar.
+You can notice the menu on the left, which can be opened/closed using the burger icon in the top-left corner of the header bar.
 
 You can show the current logged user or if you prefer the company logo, there also a information icon that will be discussed later on
 
