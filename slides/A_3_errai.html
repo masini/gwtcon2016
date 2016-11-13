@@ -2,10 +2,35 @@
 <!-- FIRST SECTION -->
    <h2>ERRAI Framework</h2>
 
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-
-    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
+<!-- <section data-background="resources/wired.jpg" > 29 39 50 -->
+<section data-background="../resources/GWTcon_bg.png" >
+<!--    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana"> -->
+<div style="border:1px solid white; background-color:#63cce9ff; margin:80px; font-family: Verdana">
         <p align="left">
+            <ul>
+                <li style="color:rgba(29, 39, 50, 1);">Errai-Navigation</li>
+                <ul>
+		          <li>easy, annotation based, history,</li>
+		          <li>typed inter apps (page) transitions;</li>
+                </ul>
+                <li style="color:rgba(29, 39, 50, 1);">Errai-Security</li>
+                <ul>
+                    <li>clean, annotation based, authorization,</li>
+                    <li>SecurityContext;</li>
+                </ul>
+                <li style="color:rgba(29, 39, 50, 1);">Errai JAX</li>
+                <ul>
+                    <li>REST-based Web services</li>
+                    <li>client-side interceptors</li>
+                </ul>
+                <li style="color:rgba(29, 39, 50, 1);">Errai IOC</li>
+                <ul>
+                    <li>@Inject</li>
+                    <li>@Alternative, customization</li>
+                </ul>
+            </ul>
+
+<!--
             Enterprise Applications need to:<br>
             <ul>
                 <li>hava pages integrated in the browser history</li>
@@ -14,22 +39,24 @@
                 <li>be customized (Splash Page, Wait Panel, ...)</li>
                 <li>have common features (search, async callback, ...)</li>
             </ul>
+-->
+
+
         </p>
     </div>
 </section>
 
 
 
-
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
-        <p style="font-size:35px">Errai Navigation to ...</p>
+<section data-background="../resources/GWTcon_bg.png" >
+    <div style="border:1px solid white; background-color:#63cce9ff; margin:80px; padding: 15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">Errai Navigation to ... <br></p>
 
         <div align="left">
             <ul>
                 <li>declare page with Page Annotation over the classes
                     <div
-                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                         <div align="left">
                             <small>
                                 @Page(role = DefaultPage.class, path = "/home")<br>
@@ -37,10 +64,11 @@
                             </small>
                         </div>
                     </div>
+                    <br>
                 </li>
                 <li>navigate between pages
                     <div
-                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                         <div align="left">
                             <small>
                                 @Inject TransitionTo&lt;Samples&gt; transition;<br>
@@ -49,50 +77,23 @@
                             </small>
                         </div>
                     </div>
+                    <br>
                 </li>
             </ul>
         </div>
     </div>
 </section>
 
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
-        <p style="font-size:35px">IOC to ...</p>
-
-        <div align="left">
-            <ul>
-                <li>obtain user informations and application data through DI
-                    <div
-                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
-                        <div align="left">
-                            <small>
-                                @Inject BootstrapData bootstrapData;<br>
-                                ...<br>
-                                Window.alert(bootstrapData.getUserInfo().getUsername());<br>
-                                ...<br>
-                                Window.alert(bootstrapData.getApplicationName());<br>
-                                Window.alert(bootstrapData.getServerName());<br>
-                            </small>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Third SECTION -->
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div
-        style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
-        <p style="font-size:35px">Errai Security to ... </p>
+<section data-background="../resources/GWTcon_bg.png" >
+    <div style="border:1px solid white; background-color:#63cce9ff; margin:80px; padding: 15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">Errai Security to ... </p>
         <div align="left">
             <ul>
                 <li>restrict access through Rescricted Access Annotation over:
                     <ul>
                         <li>Pages and UI elements
                             <div
-                                style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                                style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                                 <div align="left">
                                     <small>
                                         @Page(role = DefaultPage.class, path = "/home")<br>
@@ -108,7 +109,7 @@
                         </li>
                         <li>REST resources
                             <div
-                                style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                                style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                                 <div align="left">
                                     <small>
                                         @GET @Path("/{id}")<br>
@@ -126,15 +127,44 @@
     </div>
 </section>
 
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
-        <p style="font-size:35px">IOC and Alternative to ...</p>
+
+
+<section data-background="../resources/GWTcon_bg.png" >
+    <div style="border:1px solid white; background-color:#63cce9ff; padding:15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">IOC to ...</p>
+
+        <div align="left">
+            <ul>
+                <li>obtain user informations and application data through DI
+                    <div
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                                @Inject BootstrapData bootstrapData;<br>
+                                ...<br>
+                                Window.alert(bootstrapData.getUserInfo().getUsername());<br>
+                                ...<br>
+                                Window.alert(bootstrapData.getApplicationName());<br>
+                                Window.alert(bootstrapData.getServerName());<br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section data-background="../resources/GWTcon_bg.png" >
+    <div style="border:1px solid white; background-color:#63cce9ff; margin:80px; padding:15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">IOC and Alternative to ...</p>
 
         <div align="left">
             <ul>
                 <li>customize the SplashPage through an instance of AppView
                     <div
-                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                         <div align="left">
                             <small>
                                 @Inject AppView appView;<br>
@@ -146,7 +176,7 @@
                 </li>
                 <li>customize the SplashPage creating an alternative for SplashScreen and activating it into ErraiApp.properties
                     <div
-                        style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                         <div align="left">
                             <small>
                                 @Alternative<br>
@@ -163,15 +193,15 @@
     </div>
 </section>
 
-<section data-background="resources/wired.jpg" > <!--#1976D2-->
-    <div style="border:1px solid white; background-color:rgba(34, 40, 134, 0.8); padding:15px; font-family: Verdana">
-        <p style="font-size:35px">Intercerptors to ...</p>
+<section data-background="../resources/GWTcon_bg.png" >
+    <div style="border:1px solid white; background-color:#63cce9ff; padding:15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">Intercerptors to ...</p>
 
         <div align="left">
             <ul>
                 <li>handle Async Callback through interceptors over REST resources
                 <div
-                    style="border:1px solid white; background-color:rgba(0, 0, 0, 0.4);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                    style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8);  margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
                     <div align="left">
                         <small>
                             @GET<br>

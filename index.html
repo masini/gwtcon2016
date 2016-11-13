@@ -28,6 +28,11 @@
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
+
+        <!-- style customizations -->
+        <link rel="stylesheet" href="local.css" id="theme">
+
+
         <!--[if lt IE 9]>
         <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
         <![endif]-->
@@ -194,14 +199,6 @@
                 
                     
                         
-    <section data-html="slides/A_5_ui.html"></section>
-
-
-                    
-                    
-                
-                    
-                        
     <section data-html="slides/A_final.html"></section>
 
 
@@ -228,7 +225,7 @@
 
             // Optional reveal.js plugins
             dependencies: [
-                { src: 'bower_components/socket.io/socket.io.js', async: true },
+                { src: 'bower_components/socket.io/lib/socket.js', async: true },
                 { src: 'bower_components/reveal.js/plugin/notes-server/client.js', async: true },
                 { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
                 { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
