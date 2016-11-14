@@ -1,8 +1,8 @@
 ##  Tech choices
 
-* GWT 2.8 (of course)
-* GWT Material 1.6 (soon 2.0)
-* Errai Framework 4
+* <span style="background-color:black">GWT 2.8 (of course)</span>
+* <span style="background-color:black">GWT Material 1.6 (soon 2.0)</span>
+* <span style="background-color:black">Errai Framework 4</span>
 
 
 Note: 
