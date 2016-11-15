@@ -4,7 +4,8 @@ Here a snippet of code using ProductiveGWT
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```Java
-@MenuEntry(text = "Catalogue") //Integration with GUI and Security
+@MenuEntry(text = "Catalogue") //Integration with GUI...
+@RestrictedAccess(roles = SecurityRoles.RESPONSABILE) ///...and Security
 @Page // Navigation integrated with browser history
 public class CataloguePage extends AbstractRicercaView<Catalogue> {
 
