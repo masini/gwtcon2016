@@ -55,14 +55,6 @@
         }
     },
     {
-        "filename": "material-design-2.md",
-        "attr": {
-            "data-transition": "zoom",
-            "data-background-transition": "zoom",
-            "data-background": "resources/saturno.jpg"
-        }
-    },
-    {
         "filename": "material-design-3.md",
         "attr": {
             "data-transition": "zoom",
