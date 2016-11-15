@@ -79,6 +79,14 @@
         }
     },
     {
+        "filename": "gwt-2-8-debugger.md",
+        "attr": {
+            "data-transition": "zoom",
+            "data-background-transition": "zoom",
+            "data-background": "resources/venere.jpg"
+        }
+    },
+    {
         "filename": "gwt-material.md",
         "attr": {
             "data-transition": "zoom",

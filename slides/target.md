@@ -11,9 +11,16 @@ Note:
 
 As I said, we identified these objectives for our metaframework:
 
-A coherent layout, complete of all the necessary elements, I will say more about this later //
-Automatic integration with backend subsystem, in particular user provisioning and bootstrap application data //
-A simple alternative to gwt-rpc to call REST end-point
-Plain old GWT Widgets that let the developer write the user interface without worrying too much about what HTML will be generated, but assuring us that the layout and style will be preserved
+1) A coherent layout, complete of all the necessary elements, I will say more about this later //
+
+2) Automatic integration with backend subsystem, in particular user provisioning and bootstrap application data //
+
+3) A simple alternative to gwt-rpc to call REST end-point
+
+3) I know that in the last two days everyone showed how to create GUIs without Widgets, but we decided anyway to go for plain 
+old GWT Widgets that let the developer write the user interface without worrying too much about what HTML 
+will be generated, but assuring us that the layout and style will be preserved
+
+
 
 To do this we selected some frameworks available in the open source GWT space and we integrated them for the end-user developer
