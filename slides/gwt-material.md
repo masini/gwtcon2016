@@ -8,7 +8,7 @@
 Note:
 
 GWT Material version 1.6 is ready to use in production, it has some issues, but no one really blocking. 
-Still also you need to use the original GWT DataGrid but styles for it are bundled and we can survive.
+Still also you need to use the original GWT Celltable with Material styles.
 
 We decided not to use MDL, we don't use HTML5/CSS3 for our views so we would need to create wrapper for every widget,
 too much work

@@ -12,14 +12,14 @@ You can show the current logged user or if you prefer the company logo, there al
 
 The header bar can include a search bar and the application title
 
-Finally the content panel, which in this example include a GWT DataGrid that uses GWT-Material styles.
+Finally the content panel, which in this example include a GWT CellTable that uses GWT-Material styles.
 
 Here we can note icons in the generated menu, and among other widgets in the content panel a collapsible, 
 very useful if you want to include some controls.
  
 Here we have material buttons and material list box
   
-Below two datagrids that show the results
+Below two celltable that show the results
 
 Interesting to note that this web application not only is responsive and usable on device with various screen sizes,
 but is also touch ready, so can be used in kiosk available to internal users and customers
