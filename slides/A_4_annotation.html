@@ -2,36 +2,65 @@
 <h2 style="">Annotation</h2>
 
 <section data-background="../resources/GWTcon_bg.png" >
-<div style="color:white">
-<div style="border:1px solid white; opacity: 0.9; background-color:#63cce9ff; padding:50px; color:black">
-      <p align="left"> @MenuEntry</p>
-      <p align="left"> - using APT</p>
-      <p align="left"> - from scratch</p>
-   </div>
-</div>
+    <div style="border:1px solid white; background-color:#63cce9ff; padding:15px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);"></p>
+
+        <div align="left">
+            <ul style="padding:20px;">
+                <li>@MenuEntry </li>
+                <li>Using APT </li>
+                <li>From scratch </li>
+                <li>Needs, sort of, global knowledge  </li>
+            </ul>
+        </div>
+    </div>
 </section>
+
 
 <!-- Third SECTION -->
 
 <section data-background="../resources/GWTcon_bg.png" >
-<div style="color:white">
-<div style="border:1px solid white; opacity: 0.9; background-color:#63cce9ff; padding:50px; color:black">
-      <p align="left"> Short description of the procedure</p>
-      <p align="left"> - global construction</p>
-      <p align="left"> - </p>
-   </div>
-</div>
+    <div style="border:1px solid white; background-color:#63cce9ff; padding:15px;  margin-top:80px; font-family: Verdana">
+        <p style="font-size:35px; color:rgba(29, 39, 50, 1);">The processor</p>
+        <div align="left">
+            <ul>
+                <li> Hook on all classes
+                    <div
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                              @AutoService(Processor.class)
+                              <br>
+                              <br>
+                              @SupportedAnnotationTypes(value = {"*"})
+                              <br><br>
+                            </small>
+                        </div>
+                    </div>
+                </li>
+                <li> process, cache and emit
+                    <div
+                        style="border:1px solid white; background-color:rgba(29, 39, 50, 0.8); margin-top:10px; margin-bottom:10px; padding:15px; font-family: monospace">
+                        <div align="left">
+                            <small>
+                              @Override
+                              <br><br>
+                              public boolean process(Set< ? extends TypeElement> elements, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RoundEnvironment env) {
+<br><br>
+                              if (env.processingOver()) { //last round, we can write
+                              <br>   &nbsp;&nbsp;&nbsp;//generate the 'menu' with the inforations from the pages-database
+                              <br>} else {
+                              <br>   &nbsp;&nbsp;&nbsp;//.... enlist in the pages-database the current page
+                              <br>}
+                              <br><br>
+                              </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<!-- Fourth SECTION -->
 
-<section data-background="../resources/GWTcon_bg.png" >
-<div style="color:white">
-<div style="border:1px solid white; opacity:0.9; background-color:#63cce9ff; padding:50px; color:black">
-      <p align="left"> Generates a temporary file </p>
-      <p align="left"> - during compilation we have a temporary file (used to construct the menu tree)</p>
-      <p align="left"> - </p>
-   </div>
-</div>
-</section>
 
